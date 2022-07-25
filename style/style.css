@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Edu NSW ACT Foundation', sans-serif;
+}
+
+body{
+  background-color: #8fe3fb;
+}
+
+.container-menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+.logo h1 {
+  color:  #0460d9;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-left: 0.8rem;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #0460d9;
+  cursor: pointer;
+}
+
+ul li a:hover {
+  color: #fff;
+}
+
+.btn  {
+  background-color: #f2f2f2;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+ background-color: #011927;
+}
+
+.quite {
+  display: flex;
+  max-width: 100%;
+  margin-top: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.right img{
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+
+.left{
+  max-width: 100%;
+}
+
+.title h1{
+  font-size: 50px;
+  color: #0476d9;
+}
+
+.left p{
+  color: #0476d9;
+  line-height: 2.5rem;
+}
+
+button{
+  color: #0460d9;
+  background-color: #f2f2f2;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+button:hover{
+  color: #fff;
+  background-color: #011927;
+}

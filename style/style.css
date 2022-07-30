@@ -37,6 +37,13 @@ body{
   margin-left: 0.8rem;
 }
 
+blockquote, cite{
+  font-family: cursive;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-left: 0.8rem;
+}
+
 ul{
   display: flex;
   list-style: none;
@@ -105,4 +112,15 @@ button{
 button:hover{
   color: #fff;
   background-color: #011927;
+}
+
+.js-scroll{
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }

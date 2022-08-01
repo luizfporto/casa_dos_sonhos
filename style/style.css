@@ -124,3 +124,26 @@ button:hover{
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+.curso{
+  display: flex;
+  max-width: 100%;
+  margin-left: 10rem;
+  margin-top: 8rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Edu NSW ACT Foundation', sans-serif;
+  font-size: 1.55rem;
+  color: #0460d9;
+}
+
+.course {
+  display: flex;
+  max-width: 100%;
+  margin-left: 8rem;
+  margin-top: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}

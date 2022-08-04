@@ -147,3 +147,79 @@ button:hover{
   align-items: center;
   flex-wrap: wrap;
 }
+
+.img-faq{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.faq  {
+  display: flex;
+  max-width: 100%;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Edu NSW ACT Foundation', sans-serif;
+  color:  #0460d9;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-left: 0.8rem;
+}
+
+
+.faq-lista dt{
+  font-family: 'Edu NSW ACT Foundation', sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  color: #011927;
+}
+
+.faq-lista dt::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #011927;
+}
+
+.faq-lista dd {
+  font-family: Helvetica, Arial;
+  margin-bottom: .5rem;
+  margin-left: 30px;
+}
+
+.js-accordion dd {
+  display: none;
+}
+
+.js-accordion dt::after {
+  content: '⮷';
+  margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+  content: '⮵';
+}
+
+.js-accordion dd.ativo {
+  display: block;
+  animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}

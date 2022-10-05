@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap");
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Edu NSW ACT Foundation', sans-serif;
+  font-family: "Edu NSW ACT Foundation", sans-serif;
 }
 
-body{
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   background-color: #8fe3fb;
 }
 
-.container-menu{
+.container-menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -20,7 +23,7 @@ body{
   width: 100%;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
 }
@@ -31,20 +34,21 @@ body{
 }
 
 .logo h1 {
-  color:  #0460d9;
+  color: #0460d9;
   font-size: 1.55rem;
   font-weight: 700;
   margin-left: 0.8rem;
 }
 
-blockquote, cite{
+blockquote,
+cite {
   font-family: cursive;
   font-size: 1.55rem;
   font-weight: 700;
   margin-left: 0.8rem;
 }
 
-ul{
+ul {
   display: flex;
   list-style: none;
   gap: 3rem;
@@ -60,14 +64,14 @@ ul li a:hover {
   color: #fff;
 }
 
-.btn  {
+.btn {
   background-color: #f2f2f2;
   padding: 0.9rem 1.3rem;
   border-radius: 0.5rem;
 }
 
 .btn:hover {
- background-color: #011927;
+  background-color: #011927;
 }
 
 .quite {
@@ -79,27 +83,27 @@ ul li a:hover {
   flex-wrap: wrap;
 }
 
-.right img{
+.right img {
   max-width: 100%;
   width: 600px;
   height: auto;
 }
 
-.left{
+.left {
   max-width: 100%;
 }
 
-.title h1{
+.title h1 {
   font-size: 50px;
   color: #0476d9;
 }
 
-.left p{
+.left p {
   color: #0476d9;
   line-height: 2.5rem;
 }
 
-button{
+button {
   color: #0460d9;
   background-color: #f2f2f2;
   padding: 0.9rem 1.3rem;
@@ -109,15 +113,15 @@ button{
   cursor: pointer;
 }
 
-button:hover{
+button:hover {
   color: #fff;
   background-color: #011927;
 }
 
-.js-scroll{
+.js-scroll {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .js-scroll.ativo {
@@ -125,7 +129,7 @@ button:hover{
   transform: translate3d(0, 0, 0);
 }
 
-.curso{
+.curso {
   display: flex;
   max-width: 100%;
   margin-left: 10rem;
@@ -133,7 +137,7 @@ button:hover{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  font-family: 'Edu NSW ACT Foundation', sans-serif;
+  font-family: "Edu NSW ACT Foundation", sans-serif;
   font-size: 1.55rem;
   color: #0460d9;
 }
@@ -148,7 +152,7 @@ button:hover{
   flex-wrap: wrap;
 }
 
-.img-faq{
+.img-faq {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0.1rem;
@@ -156,7 +160,7 @@ button:hover{
   align-items: center;
 }
 
-.faq  {
+.faq {
   display: flex;
   max-width: 100%;
   margin-left: 10rem;
@@ -164,24 +168,23 @@ button:hover{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  font-family: 'Edu NSW ACT Foundation', sans-serif;
-  color:  #0460d9;
+  font-family: "Edu NSW ACT Foundation", sans-serif;
+  color: #0460d9;
   font-size: 1.55rem;
   font-weight: 700;
   margin-left: 0.8rem;
 }
 
-
-.faq-lista dt{
-  font-family: 'Edu NSW ACT Foundation', sans-serif;
+.faq-lista dt {
+  font-family: "Edu NSW ACT Foundation", sans-serif;
   font-weight: bold;
   margin-top: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: #011927;
 }
 
 .faq-lista dt::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 10px;
@@ -191,7 +194,7 @@ button:hover{
 
 .faq-lista dd {
   font-family: Helvetica, Arial;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: 30px;
 }
 
@@ -200,17 +203,17 @@ button:hover{
 }
 
 .js-accordion dt::after {
-  content: '⮷';
+  content: "⮷";
   margin-left: 10px;
 }
 
 .js-accordion dt.ativo::after {
-  content: '⮵';
+  content: "⮵";
 }
 
 .js-accordion dd.ativo {
   display: block;
-  animation: slideDown .5s forwards;
+  animation: slideDown 0.5s forwards;
 }
 
 @keyframes slideDown {
@@ -222,4 +225,32 @@ button:hover{
     opacity: 1;
     max-height: 200px;
   }
+}
+
+/* voltar ao topo */
+#btnTop {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 2.5rem;
+  background-color: #0460d9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+footer{
+  background-color: #011927;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.footer{
+  text-decoration: none;
+  cursor: pointer;
+  color: #feea05;
 }

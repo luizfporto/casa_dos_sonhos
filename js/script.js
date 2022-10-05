@@ -22,9 +22,9 @@ initAnimacaoScroll();
 
 function initAccordion() {
   const accordionList = document.querySelectorAll(".js-accordion dt");
-  const activeClass = 'ativo';
+  const activeClass = "ativo";
 
-  if(accordionList.length) {
+  if (accordionList.length) {
     accordionList[0].classList.add(activeClass);
     accordionList[0].nextElementSibling.classList.add(activeClass);
 
@@ -39,3 +39,21 @@ function initAccordion() {
   }
 }
 initAccordion();
+
+// Voltar ao topo
+const btn = document.getElementById("btnTop");
+
+btn.addEventListener("click", function () {
+  window.scrollTo(0, 0);
+});
+
+document.addEventListener("scroll", hide);
+
+function hide() {
+  if (window.scrollY > 15) {
+    btn.style.display = "flex";
+  } else {
+    btn.style.display = "none";
+  }
+}
+hide();

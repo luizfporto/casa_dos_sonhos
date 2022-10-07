@@ -1,3 +1,23 @@
+// Menu Mobile
+const btnMobile = document.getElementById("btn-mobile");
+
+function toggleMenu(event) {
+  if (event.type === "touchstart") event.preventDefault();
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active");
+  const active = nav.classList.contains("active");
+  event.currentTarget.setAttribute("aria-expanded", active);
+  if (active) {
+    event.currentTarget.setAttribute("aria-label", "Fechar Menu");
+  } else {
+    event.currentTarget.setAttribute("aria-label", "Abrir Menu");
+  }
+}
+
+btnMobile.addEventListener("click", toggleMenu);
+btnMobile.addEventListener("touchstart", toggleMenu);
+
+// Animação scroll
 function initAnimacaoScroll() {
   const sections = document.querySelectorAll(".js-scroll");
   if (sections.length) {
@@ -20,6 +40,8 @@ function initAnimacaoScroll() {
 
 initAnimacaoScroll();
 
+// Animação Accordion
+
 function initAccordion() {
   const accordionList = document.querySelectorAll(".js-accordion dt");
   const activeClass = "ativo";
@@ -41,6 +63,7 @@ function initAccordion() {
 initAccordion();
 
 // Voltar ao topo
+
 const btn = document.getElementById("btnTop");
 
 btn.addEventListener("click", function () {
